@@ -51,6 +51,3 @@ npm_config_registry=https://registry.npm.taobao.org npm
 # npx is an internal tool of npm
 npm_config_registry=https://registry.npm.taobao.org npx
 ```
-
-
-(TBD)
