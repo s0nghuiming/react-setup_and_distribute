@@ -44,10 +44,32 @@ npm --registry=https://registry.npm.taobao.org \
   --userconfig=$HOME/.cnpmrc
 ```
 
-### Use env variable of npm
+### Use Taobao's alternative npm 
+Install cnpm which from taobao.
+```bash
+# I don't test it :(
+npm install -g cnpm --registry=https://registry.npm.taobao.org
+```
+
+### Use env variable of npm in Mingw64 (Mingw64, Optional)
+If you use MinGW64 as your terminal in windows, using the following pre-defined environ variable is also the good method to run npm/npx. Start your MinGW64 terminal.
 ```bash
 # npm using env variable
 npm_config_registry=https://registry.npm.taobao.org npm
 # npx is an internal tool of npm
 npm_config_registry=https://registry.npm.taobao.org npx
+```
+
+### Use alias of npm in Mingw64 (Mingw64, Optional)
+```bash
+alias cnpm="npm --registry=https://registry.npm.taobao.org \
+--cache=$HOME/.npm/.cache/cnpm \
+--disturl=https://npm.taobao.org/dist \
+--userconfig=$HOME/.cnpmrc"
+
+# Or alias it in .bashrc or .zshrc
+$ echo '\n#alias for cnpm\nalias cnpm="npm --registry=https://registry.npm.taobao.org \
+  --cache=$HOME/.npm/.cache/cnpm \
+  --disturl=https://npm.taobao.org/dist \
+  --userconfig=$HOME/.cnpmrc"' >> ~/.zshrc && source ~/.zshrc
 ```
