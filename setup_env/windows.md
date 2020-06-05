@@ -73,3 +73,11 @@ $ echo '\n#alias for cnpm\nalias cnpm="npm --registry=https://registry.npm.taoba
   --disturl=https://npm.taobao.org/dist \
   --userconfig=$HOME/.cnpmrc"' >> ~/.zshrc && source ~/.zshrc
 ```
+
+## Debug in your browser
+
+### Chrome
+
+Install [the React Devtools extension for Chrome](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en).
+
+Then start Chrome. On the page that contains React function, right click mouse button and select Inspect. You will find two tabs named Component and Profiler. Just open them to try.
