@@ -74,6 +74,11 @@ $ echo '\n#alias for cnpm\nalias cnpm="npm --registry=https://registry.npm.taoba
   --userconfig=$HOME/.cnpmrc"' >> ~/.zshrc && source ~/.zshrc
 ```
 
+### Install create-react-app generator
+```bash
+npm install -g create-react-app
+```
+
 ## Debug in your browser
 
 ### Chrome
